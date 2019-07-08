@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="ASLAN Erdal">
+    <meta name="Portfolio" content="Portfolio en ligne de ASLAN de www.codintag.fr">
+    <link rel="shortcut icon" href="images/laLettreP.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/formulaire.js"></script>
+
+
+    <!--Les liens CDN bootstrap-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!--Les fonts icons-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Contact - ASLAN E.</title>
+
+</head>
+
+<body>
+
+    <!--Ma navBar vient en entête de ma page en position sticky-->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <a class="navbar-brand font-weight-bolder" href="index.html">PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="fa fa-align-justify pt-1 text-light"></span>
+        </button>
+
+        <div class="collapse navbar-collapse align-content-right my-1 divMenuL" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><i class="fa fa-eercast"></i> A Propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="langages.html"><i class="fa fa-code"></i>
+                        Langages Web</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i
+                            class="fa fa-rocket"></i>
+                        Mes Projets
+                    </a>
+                    <div class="dropdown-menu">
+
+                        <a class="dropdown-item" href="index.html"><span></span> PortFolio</a>
+                        <a class="dropdown-item" href="../cvErdal/index.html">Curriculium Vitae </a>
+                        <a class="dropdown-item" href="#">www.CodInTag.fr</a>
+                        <a class="dropdown-item" href="#">www.AnatolStories.com</a>
+                        <a class="dropdown-item" href="#">App Weather</a>
+                        <a class="dropdown-item" href="#">App CodInTag</a>
+                        <a class="dropdown-item" href="#">Projet e-commerce</a>
+                        <a class="dropdown-item" href="#">Projet 8</a>
+                        <a class="dropdown-item" href="#">Projet 9</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="fa fa-address-card"></i> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--La section du Formulaire-->
+    <div class="my-4">
+    <div class="jumbotron bg-white col-md-6 m-auto">
+        <form action="contactPortfolio.php" class="needs-validation font-weight-bold text-black-50" method="POST" novalidate>
+
+            <h1 class="mb-4 pb-4 font-weight-bold text-warning">Contactez-moi!</h1>
+
+            <div class="form-group">
+                <label for="lastname">Nom:</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Entrez votre Nom" name="lastname" required autofocus>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez remplir le champ du formulaire!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="uname">Prénom:</label>
+                <input type="text" class="form-control" id="uname" placeholder="Entrez votre prénom" name="uname"
+                required>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez remplir le champ du formulaire!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Votre Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Entrez votre courriel" name="email" required>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez remplir le champ du formulaire!</div>
+            </div>
+
+            <div class="form-group form-check">
+                <label class="form-check-label"></label>
+                    <input class="form-check-input" type="checkbox" name="remember" required> en cochant cette case j'accepte de recevoir des informations.
+                    <div class="valid-feedback">Valide.</div>
+                    <div class="invalid-feedback">Cochez la case pour continuer!</div>
+                
+            </div>
+
+            <div class="form-group form-check pl-0">
+
+                <label for="comment">Commentaire:</label>
+
+                <textarea class="form-control" rows="5" id="comment" name="comment" required placeholder="Votre commentaire ici..."></textarea>
+
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez remplir le champ du formulaire!</div>
+            
+            </div>
+            
+            <button type="submit" class="btn btn-primary col-md-5 col-5">Evoyer</button>
+            <button type="reset" class="btn btn-primary col-md-5 col-5 float-right">Réinitialiser</button>
+            <div id="envoie" style="display: none">Votre message à été envoyé!</div>
+        </form>
+    </div>
+    </div>
+
+    <section class="container-fluid google my-4">
+            <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1613.9375230452436!2d2.4529018470002764!3d48.62826279365518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e0bec3e6d6db%3A0xc371557a7638f643!2sCRP+Beauvoir!5e0!3m2!1sfr!2sfr!4v1562242081274!5m2!1sfr!2sfr" frameborder="0" style="border: 1px solid #444;" allowfullscreen></iframe>
+    </section>
+
+
+<!--Le footer de ma page-->
+    <footer class="py-4 bg-light text-dark text-center mb-0 mt-4">
+        
+        <p class="col-md-12 my-0">2019 - Portfolio crée par ASLAN E. - Tous droits réservés <i
+                class="fa fa-copyright"></i></p>
+        <address class="col-md-12 my-0">Adresse : CRP Beauvoir, 33 Avenue du Mousseau 91000 Evry</address>
+    
+        <div class="col-md-12">
+                <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook-square"></span></a> 
+                <a href="https://twitter.com/?lang=fr" target="_blank"><span class="fa fa-twitter"></span></a> 
+                <a href="https://www.youtube.com/" target="_blank"><span class="fa fa-youtube-play"></span></a> 
+                <a href="https://github.com/" target="_blank"><span class="fa fa-github"></span></a> 
+                <a href="https://www.linkedin.com/feed/" target="_blank"><span class="fa fa-linkedin-square"></span></a> 
+        </div>
+    </footer>
+
+</body>
+
+</html>

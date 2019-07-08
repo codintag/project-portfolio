@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* Couleurs r├®seaux sociaux */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+* {
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+.carousel-item {
+  width: 100%;
+  max-height: 550px; }
+
+body .navbar {
+  background-color: #418FDE; }
+  body .navbar a {
+    font-weight: 900; }
+body .divMenuL ul li a {
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all .3s; }
+body .divMenuL ul li a:hover {
+  color: #fff !important; }
+body .divMenuL ul li .dropdown-menu a {
+  color: #444 !important; }
+body section.container div.d-flex div img {
+  height: auto; }
+body section.container {
+  margin-top: 80px;
+  padding: 0 15px 30px 15px; }
+  body section.container div.progressBar span {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #444444;
+    padding: 10px 0; }
+  body section.container div.progressBar svg {
+    width: 70%; }
+    body section.container div.progressBar svg .circular-chart {
+      display: block;
+      max-width: 100%;
+      max-height: 100%; }
+    body section.container div.progressBar svg .grey {
+      stroke: #d0d2d8;
+      /*#363636;*/
+      fill: none;
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      filter: drop-shadow(0 0 0.2px #000); }
+    body section.container div.progressBar svg .circle {
+      /*stroke: #4CE98D;  <= la couleur de base */
+      fill: none;
+      stroke-width: 2.9;
+      stroke-linecap: round;
+      animation: progress 1s ease-out forwards;
+      filter: drop-shadow(0 0 0.2px #000); }
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100; } }
+    body section.container div.progressBar svg .html {
+      stroke: #fa8d11; }
+    body section.container div.progressBar svg .css {
+      stroke: #264ee4; }
+    body section.container div.progressBar svg .javascript {
+      stroke: #f7df1e; }
+    body section.container div.progressBar svg .php {
+      stroke: #8892bf; }
+    body section.container div.progressBar svg .python {
+      stroke: #346F9F; }
+    body section.container div.progressBar svg .ruby {
+      stroke: #be1702; }
+body div form label:not(.form-check-label) {
+  font-size: 1.2em; }
+body .envoie {
+  display: block; }
+body footer {
+  font-size: 1em;
+  font-weight: 900;
+  border-top: 4px solid #d4d4d4; }
+  body footer div {
+    text-align: right; }
+    body footer div a {
+      color: inherit; }
+  body footer p,
+  body footer address {
+    color: #555; }
+  body footer .fa:not(.fa-copyright) {
+    font-size: 2.5em;
+    padding: 0 10px; }
+  body footer .fa-facebook-square:hover {
+    color: #4267B2; }
+  body footer .fa-twitter:hover {
+    color: #1DA1F2; }
+  body footer .fa-youtube-play:hover {
+    color: #ff0000; }
+  body footer .fa-github:hover {
+    color: #1B1F23; }
+  body footer .fa-linkedin-square:hover {
+    color: #007BB6; }
+body .google {
+  display: flex;
+  margin: 100px 0;
+  margin-bottom: 100px !important; }
+  body .google .googleMap {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 500px;
+    align-self: center; }
+
+/*# sourceMappingURL=portfolio.css.map */
